@@ -2,7 +2,7 @@
 
 ChigginBlazzder is a multi-platform game created moslty for iOS and Android devices, but also works on macOS, Windows, and Linux too.
 
-Created with [LibGDX](https://github.com/libgdx/libgdx) and written in [Kotlin](https://kotlinlang.org/).
+Created with [libGDX](https://github.com/libgdx/libgdx) and written in [Kotlin](https://kotlinlang.org/).
 
 ### Building
 
