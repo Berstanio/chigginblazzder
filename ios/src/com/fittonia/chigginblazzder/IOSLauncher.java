@@ -1,13 +1,18 @@
 package com.fittonia.chigginblazzder;
 
-import org.robovm.apple.foundation.NSAutoreleasePool;
-import org.robovm.apple.uikit.UIApplication;
+import apple.uikit.c.UIKit;
+import com.badlogic.gdx.backends.iosmoe.IOSApplication;
+import com.badlogic.gdx.backends.iosmoe.IOSApplicationConfiguration;
+import org.moe.natj.general.Pointer;
+import org.moe.natj.general.ann.RegisterOnStartup;
+import org.moe.natj.objc.ObjCAutoreleasePool;
 
-import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
-import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
-import com.fittonia.chigginblazzder.MainApp;
-
+@RegisterOnStartup
 public class IOSLauncher extends IOSApplication.Delegate {
+    protected IOSLauncher (Pointer peer) {
+        super(peer);
+    }
+
     @Override
     protected IOSApplication createApplication() {
         IOSApplicationConfiguration config = new IOSApplicationConfiguration();
@@ -17,9 +22,9 @@ public class IOSLauncher extends IOSApplication.Delegate {
         return new IOSApplication(new MainApp(false), config);
     }
 
-    public static void main(String[] argv) {
-        NSAutoreleasePool pool = new NSAutoreleasePool();
-        UIApplication.main(argv, null, IOSLauncher.class);
+    public static void main(String[] argv) throws Exception {
+        ObjCAutoreleasePool pool = new ObjCAutoreleasePool();
+        UIKit.UIApplicationMain(0, null, null, IOSLauncher.class.getName());
         pool.close();
     }
 }
