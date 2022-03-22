@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,9 @@
 		E6DE0A7B1C02E5FE00E17E81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DE0A7A1C02E5FE00E17E81 /* Foundation.framework */; };
 		E6DE0A7D1C02F75C00E17E81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DE0A7C1C02F75C00E17E81 /* QuartzCore.framework */; };
 		E6FF701B1CE3485800963DBA /* assets in Resources */ = {isa = PBXBuildFile; fileRef = E6FF701A1CE3485800963DBA /* assets */; };
+		F009B42F27EA177700118D63 /* gdx.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F009B42D27EA159300118D63 /* gdx.xcframework */; };
+		F009B43027EA177B00118D63 /* gdx-box2d.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F009B42B27EA157500118D63 /* gdx-box2d.xcframework */; };
+		F009B43427EA20FB00118D63 /* ObjectAL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F009B43327EA20FB00118D63 /* ObjectAL.xcframework */; };
 		F027C653264EF15500426F4F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA391FF1CDB7C93004E54E1 /* CoreMotion.framework */; };
 		F027C654264EF15500426F4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DE0A7C1C02F75C00E17E81 /* QuartzCore.framework */; };
 		F027C655264EF15500426F4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DE0A7A1C02E5FE00E17E81 /* Foundation.framework */; };
@@ -63,10 +66,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5A88B4FAFCEE1E474D14999D /* LibGDXMissileCommand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = LibGDXMissileCommand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A88B4FAFCEE1E474D14999D /* chigginblazzder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = chigginblazzder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AA3346B6350E455477343F /* moe-main-interfaces.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "moe-main-interfaces.m"; path = "../build/moe/main/ui-headers/moe-main-interfaces.m"; sourceTree = "<group>"; };
 		84C97445BE72A3171B9498E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C9EE503A1E3A049B00B1AF74 /* custom.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = custom.xcconfig; sourceTree = "<group>"; };
 		C9EE50401E3A083300B1AF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9EE50451E3A086000B1AF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA391FF1CDB7C93004E54E1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -81,8 +83,11 @@
 		E6DE0A7C1C02F75C00E17E81 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E6FF701A1CE3485800963DBA /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../../android/assets; sourceTree = "<group>"; };
 		EEDA81A2E94F194BC4B3E70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F027C668264EF15500426F4F /* LibGDXMissileCommand-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LibGDXMissileCommand-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F027C669264EF15500426F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/berstanio/StudioProjects/moe-samples-java/LibGDXMissileCommand/ios/xcode/Info.plist"; sourceTree = "<absolute>"; };
+		F009B42B27EA157500118D63 /* gdx-box2d.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "gdx-box2d.xcframework"; path = "native/ios/gdx-box2d.xcframework"; sourceTree = "<group>"; };
+		F009B42D27EA159300118D63 /* gdx.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = gdx.xcframework; path = native/ios/gdx.xcframework; sourceTree = "<group>"; };
+		F009B43327EA20FB00118D63 /* ObjectAL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ObjectAL.xcframework; path = native/ios/ObjectAL.xcframework; sourceTree = "<group>"; };
+		F027C668264EF15500426F4F /* chigginblazzder-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chigginblazzder-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F027C669264EF15500426F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/berstanio/StudioProjects/moe-samples-java/chigginblazzder/ios/xcode/Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F009B43427EA20FB00118D63 /* ObjectAL.xcframework in Frameworks */,
+				F009B43027EA177B00118D63 /* gdx-box2d.xcframework in Frameworks */,
+				F009B42F27EA177700118D63 /* gdx.xcframework in Frameworks */,
 				CEA392001CDB7C93004E54E1 /* CoreMotion.framework in Frameworks */,
 				E6DE0A7D1C02F75C00E17E81 /* QuartzCore.framework in Frameworks */,
 				E6DE0A7B1C02E5FE00E17E81 /* Foundation.framework in Frameworks */,
@@ -126,8 +134,8 @@
 		B46C7E3DCAAF5EC1D806EDDA = {
 			isa = PBXGroup;
 			children = (
-				F027C66B264EF18700426F4F /* LibGDXMissileCommandTest */,
-				FBDC58D56B04305DFC935A11 /* LibGDXMissileCommand */,
+				F027C66B264EF18700426F4F /* chigginblazzderTest */,
+				FBDC58D56B04305DFC935A11 /* chigginblazzder */,
 				E32CCEDF2F93127426C9F78A /* Frameworks */,
 				F0718A336B371F840C384249 /* Products */,
 				CC0B8C395402408AEB0257DC /* Multi-OS Engine */,
@@ -145,6 +153,9 @@
 		E32CCEDF2F93127426C9F78A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F009B43327EA20FB00118D63 /* ObjectAL.xcframework */,
+				F009B42D27EA159300118D63 /* gdx.xcframework */,
+				F009B42B27EA157500118D63 /* gdx-box2d.xcframework */,
 				CEA391FF1CDB7C93004E54E1 /* CoreMotion.framework */,
 				E6DE0A7C1C02F75C00E17E81 /* QuartzCore.framework */,
 				E6DE0A7A1C02E5FE00E17E81 /* Foundation.framework */,
@@ -159,12 +170,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F027C66B264EF18700426F4F /* LibGDXMissileCommandTest */ = {
+		F027C66B264EF18700426F4F /* chigginblazzderTest */ = {
 			isa = PBXGroup;
 			children = (
 				F027C66C264EF1B200426F4F /* Supporting Files */,
 			);
-			name = LibGDXMissileCommandTest;
+			name = chigginblazzderTest;
 			sourceTree = "<group>";
 		};
 		F027C66C264EF1B200426F4F /* Supporting Files */ = {
@@ -178,8 +189,8 @@
 		F0718A336B371F840C384249 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A88B4FAFCEE1E474D14999D /* LibGDXMissileCommand.app */,
-				F027C668264EF15500426F4F /* LibGDXMissileCommand-Test.app */,
+				5A88B4FAFCEE1E474D14999D /* chigginblazzder.app */,
+				F027C668264EF15500426F4F /* chigginblazzder-Test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,14 +198,13 @@
 		F3540FADD0036F133D71686D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C9EE503A1E3A049B00B1AF74 /* custom.xcconfig */,
 				84C97445BE72A3171B9498E7 /* main.m */,
 				EEDA81A2E94F194BC4B3E70A /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FBDC58D56B04305DFC935A11 /* LibGDXMissileCommand */ = {
+		FBDC58D56B04305DFC935A11 /* chigginblazzder */ = {
 			isa = PBXGroup;
 			children = (
 				C9EE50401E3A083300B1AF74 /* Assets.xcassets */,
@@ -202,15 +212,15 @@
 				E6FF701A1CE3485800963DBA /* assets */,
 				F3540FADD0036F133D71686D /* Supporting Files */,
 			);
-			path = LibGDXMissileCommand;
+			path = chigginblazzder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C4011C076B8323EB9820E9E /* LibGDXMissileCommand */ = {
+		7C4011C076B8323EB9820E9E /* chigginblazzder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42B9A61A2D168A5C2DE28952 /* Build configuration list for PBXNativeTarget "LibGDXMissileCommand" */;
+			buildConfigurationList = 42B9A61A2D168A5C2DE28952 /* Build configuration list for PBXNativeTarget "chigginblazzder" */;
 			buildPhases = (
 				866E91456AFEB16662EDCA49 /* Compile Sources (MOE) */,
 				9A19FEFC207ED5CA29209700 /* Frameworks */,
@@ -222,14 +232,14 @@
 			);
 			dependencies = (
 			);
-			name = LibGDXMissileCommand;
-			productName = LibGDXMissileCommand;
-			productReference = 5A88B4FAFCEE1E474D14999D /* LibGDXMissileCommand.app */;
+			name = chigginblazzder;
+			productName = chigginblazzder;
+			productReference = 5A88B4FAFCEE1E474D14999D /* chigginblazzder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F027C650264EF15500426F4F /* LibGDXMissileCommand-Test */ = {
+		F027C650264EF15500426F4F /* chigginblazzder-Test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F027C665264EF15500426F4F /* Build configuration list for PBXNativeTarget "LibGDXMissileCommand-Test" */;
+			buildConfigurationList = F027C665264EF15500426F4F /* Build configuration list for PBXNativeTarget "chigginblazzder-Test" */;
 			buildPhases = (
 				F027C651264EF15500426F4F /* Compile Sources (MOE) */,
 				F027C652264EF15500426F4F /* Frameworks */,
@@ -241,9 +251,9 @@
 			);
 			dependencies = (
 			);
-			name = "LibGDXMissileCommand-Test";
-			productName = LibGDXMissileCommand;
-			productReference = F027C668264EF15500426F4F /* LibGDXMissileCommand-Test.app */;
+			name = "chigginblazzder-Test";
+			productName = chigginblazzder;
+			productReference = F027C668264EF15500426F4F /* chigginblazzder-Test.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -254,13 +264,8 @@
 			attributes = {
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Test;
-				TargetAttributes = {
-					7C4011C076B8323EB9820E9E = {
-						DevelopmentTeam = KS54L6J34G;
-					};
-				};
 			};
-			buildConfigurationList = 79EDF3FDAA88E13B08C91F41 /* Build configuration list for PBXProject "LibGDXMissileCommand" */;
+			buildConfigurationList = 79EDF3FDAA88E13B08C91F41 /* Build configuration list for PBXProject "chigginblazzder" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -274,8 +279,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C4011C076B8323EB9820E9E /* LibGDXMissileCommand */,
-				F027C650264EF15500426F4F /* LibGDXMissileCommand-Test */,
+				7C4011C076B8323EB9820E9E /* chigginblazzder */,
+				F027C650264EF15500426F4F /* chigginblazzder-Test */,
 			);
 		};
 /* End PBXProject section */
@@ -413,7 +418,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) ${MOE_FRAMEWORK_PATH}";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"${MOE_FRAMEWORK_PATH}",
+				);
 				MOE_VERSION = 1.8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -425,7 +433,6 @@
 		};
 		7531C01B87C30D5DC697A625 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9EE503A1E3A049B00B1AF74 /* custom.xcconfig */;
 			buildSettings = {
 				COMPRESS_PNG_FILES = NO;
 				DEAD_CODE_STRIPPING = NO;
@@ -439,8 +446,12 @@
 					"$(inherited)",
 					"${MOE_HEADER_SEARCH_PATHS}",
 				);
-				INFOPLIST_FILE = LibGDXMissileCommand/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = chigginblazzder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				MOE_COPY_ANDROID_CACERTS = NO;
 				MOE_FRAMEWORK_PATH = "${MOE_SDK_PATH}/sdk/${PLATFORM_NAME}";
 				MOE_JAVA_VERSION_OVERRIDE = "";
@@ -458,11 +469,11 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"${MOE_OTHER_LDFLAGS}",
-					"$(LIBGDX_NATIVES)",
+					"-Wl,-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.multi-os-engine.samples.LibGDXMissileCommander";
-				PRODUCT_NAME = LibGDXMissileCommand;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.multi-os-engine.samples.chigginblazzderer";
+				PRODUCT_NAME = chigginblazzder;
 				STRIP_STYLE = "non-global";
 				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 			};
@@ -470,7 +481,6 @@
 		};
 		9526BA012B90097437EFCD2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9EE503A1E3A049B00B1AF74 /* custom.xcconfig */;
 			buildSettings = {
 				COMPRESS_PNG_FILES = NO;
 				DEAD_CODE_STRIPPING = NO;
@@ -484,8 +494,12 @@
 					"$(inherited)",
 					"${MOE_HEADER_SEARCH_PATHS}",
 				);
-				INFOPLIST_FILE = LibGDXMissileCommand/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = chigginblazzder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				MOE_COPY_ANDROID_CACERTS = NO;
 				MOE_FRAMEWORK_PATH = "${MOE_SDK_PATH}/sdk/${PLATFORM_NAME}";
 				MOE_JAVA_VERSION_OVERRIDE = "";
@@ -503,11 +517,11 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"${MOE_OTHER_LDFLAGS}",
-					"$(LIBGDX_NATIVES)",
+					"-Wl,-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.multi-os-engine.samples.LibGDXMissileCommander";
-				PRODUCT_NAME = LibGDXMissileCommand;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.multi-os-engine.samples.chigginblazzderer";
+				PRODUCT_NAME = chigginblazzder;
 				STRIP_STYLE = "non-global";
 				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 			};
@@ -558,7 +572,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) ${MOE_FRAMEWORK_PATH}";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"${MOE_FRAMEWORK_PATH}",
+				);
 				MOE_VERSION = 1.8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
@@ -570,7 +587,6 @@
 		};
 		F027C666264EF15500426F4F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9EE503A1E3A049B00B1AF74 /* custom.xcconfig */;
 			buildSettings = {
 				COMPRESS_PNG_FILES = NO;
 				DEAD_CODE_STRIPPING = NO;
@@ -584,7 +600,10 @@
 					"${MOE_HEADER_SEARCH_PATHS}",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MOE_COPY_ANDROID_CACERTS = NO;
 				MOE_FRAMEWORK_PATH = "${MOE_SDK_PATH}/sdk/${PLATFORM_NAME}";
 				MOE_JAVA_VERSION_OVERRIDE = "";
@@ -602,10 +621,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"${MOE_OTHER_LDFLAGS}",
-					"$(LIBGDX_NATIVES)",
+					"-Wl,-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.multi-os-engine.samples.LibGDXMissileCommander";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.multi-os-engine.samples.chigginblazzderer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_STYLE = "non-global";
 				VALID_ARCHS = "armv7 arm64 i386 x86_64";
@@ -614,7 +633,6 @@
 		};
 		F027C667264EF15500426F4F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9EE503A1E3A049B00B1AF74 /* custom.xcconfig */;
 			buildSettings = {
 				COMPRESS_PNG_FILES = NO;
 				DEAD_CODE_STRIPPING = NO;
@@ -628,7 +646,10 @@
 					"${MOE_HEADER_SEARCH_PATHS}",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MOE_COPY_ANDROID_CACERTS = NO;
 				MOE_FRAMEWORK_PATH = "${MOE_SDK_PATH}/sdk/${PLATFORM_NAME}";
 				MOE_JAVA_VERSION_OVERRIDE = "";
@@ -646,10 +667,10 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"${MOE_OTHER_LDFLAGS}",
-					"$(LIBGDX_NATIVES)",
+					"-Wl,-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.multi-os-engine.samples.LibGDXMissileCommander";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.multi-os-engine.samples.chigginblazzderer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_STYLE = "non-global";
 				VALID_ARCHS = "armv7 arm64 i386 x86_64";
@@ -659,7 +680,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42B9A61A2D168A5C2DE28952 /* Build configuration list for PBXNativeTarget "LibGDXMissileCommand" */ = {
+		42B9A61A2D168A5C2DE28952 /* Build configuration list for PBXNativeTarget "chigginblazzder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7531C01B87C30D5DC697A625 /* Debug */,
@@ -668,7 +689,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79EDF3FDAA88E13B08C91F41 /* Build configuration list for PBXProject "LibGDXMissileCommand" */ = {
+		79EDF3FDAA88E13B08C91F41 /* Build configuration list for PBXProject "chigginblazzder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A07993CD295A38C1EAA9362 /* Debug */,
@@ -677,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F027C665264EF15500426F4F /* Build configuration list for PBXNativeTarget "LibGDXMissileCommand-Test" */ = {
+		F027C665264EF15500426F4F /* Build configuration list for PBXNativeTarget "chigginblazzder-Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F027C666264EF15500426F4F /* Debug */,
