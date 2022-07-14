@@ -10,7 +10,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.4'
-        classpath 'com.mobidevelop.robovm:robovm-gradle-plugin:2.3.12'
+        classpath 'com.mobidevelop.robovm:robovm-gradle-plugin:2.3.16'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
 
     }
@@ -22,8 +22,8 @@ allprojects {
     version = '1.0'
     ext {
         appName = "chigginblazzder"
-        gdxVersion = '1.10.1-SNAPSHOT'
-        roboVMVersion = '2.3.12'
+        gdxVersion = '1.11.1-SNAPSHOT'
+        roboVMVersion = '2.3.16'
         box2DLightsVersion = '1.5'
         ashleyVersion = '1.7.3'
         aiVersion = '1.8.2'
@@ -91,8 +91,8 @@ project(":ios") {
         implementation project(":core")
         api "com.mobidevelop.robovm:robovm-rt:$roboVMVersion"
         api "com.mobidevelop.robovm:robovm-cocoatouch:$roboVMVersion"
-        api "io.github.berstanio:gdx-backend-robovm-metalangle:$gdxVersion"
-        api "io.github.berstanio:gdx-platform:$gdxVersion:natives-ios-metalangle"
+        api "com.badlogicgames.gdx:gdx-backend-robovm-metalangle:$gdxVersion"
+        api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
         api "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-ios"
         api "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-ios"
         api "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
