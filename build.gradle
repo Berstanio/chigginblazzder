@@ -47,11 +47,14 @@ project(":desktop") {
 
     dependencies {
         implementation project(":core")
-        api "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+        implementation('io.github.berstanio:gdx-svmhelper:1.11.1-SNAPSHOT')
+        implementation('io.github.berstanio:gdx-svmhelper-backend-lwjgl3:1.11.1-SNAPSHOT')
+        api "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
         api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
         api "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
         api "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
         api "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+        api("org.lwjgl:lwjgl-opengl:3.3.2-SNAPSHOT")
     }
 }
 
